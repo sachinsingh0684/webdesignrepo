@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Product Grid</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background: #f5f5f5;
+padding: 20px;
+}
+h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.grid {
+display: grid;
+gap: 20px;
+grid-template-columns: repeat(4, 1fr); 
+}
+
+.card {
+background: #fff;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+padding: 16px;
+text-align: center;
+}
+.card img {
+width: 100%;
+height: 150px;
+object-fit: cover;
+border-radius: 6px;
+margin-bottom: 10px;
+}
+.card h3 {
+font-size: 18px;
+margin: 8px 0;
+}
+.card p {
+font-size: 14px;
+color: #555;
+margin: 4px 0;
+}
+.price {
+font-weight: bold;
+color: #007bff;
+}
+
+@media (max-width: 1024px) {
+.grid {
+grid-template-columns: repeat(2, 1fr); 
+}
+}
+@media (max-width: 600px) {
+.grid {
+grid-template-columns: 1fr; 
+}
+}
+</style>
+</head>
+<body>
+<h2>Responsive Product Grid</h2>
+<div class="grid">
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/510A+2GzTlL._AA360_AC_QL70_.jpg" alt="Product 1">
+<h3>Product 1</h3>
+<p>High-quality item with great features.</p>
+<p class="price">₹499</p>
+</div>
+<div class="card">
+<img src="https://m.media-amazon.com/images/I/81Iyx4k9u-L._AC_UF894,1000_QL80_.jpg" alt="Product 2">
+<h3>Product 2</h3>
+<p>Durable and stylish for daily use.</p>
+<p class="price">₹799</p>
+</div>
+<div class="card">
+<img src="https://images.naptol.com/usr/local/csp/staticContent/product_images/horizontal/375x375/GoldenStylishWatch(MGW15)_04.jpg" alt="Product 3">
+<h3>Product 3</h3>
+<p>Lightweight and comfortable.</p>
+<p class="price">₹1,299</p>
+</div>
+<div class="card">
+<img src="https://wallpapers-clan.com/wp-content/uploads/2025/11/rolls-royce-phantom-in-synthwave-neon-lights-gif-desktop-wallpaper-preview.gif" alt="Product 4">
+<h3>Product 4</h3>
+<p>Trendy design with premium quality.</p>
+<p class="price">₹10,00,00,000</p>
+</div>
+</div>
+</body>
+</html>
